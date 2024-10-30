@@ -1,0 +1,89 @@
+/* Style for the body and layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+/* .container  :hover{
+    box-shadow:10px 10px 20px black;
+} */
+h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.post {
+    width: 400px;
+    height: 150px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+
+h3.user {
+    color: #0073e6;
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+h4.content {
+    color: #555;
+    font-size: 1.1em;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #0073e6;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    display: inline;
+}
+
+button {
+    background-color: yellowgreen;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #cc0000;
+}
+
+/* Style for the 'Create Post' link */
+a[href*="new"] {
+    display: block;
+    text-align: center;
+    background-color: #28a745;
+    color: white;
+    padding: 15px 20px;
+    width: 150px;
+    margin: 30px auto;
+    border-radius: 8px;
+}
+
+a[href*="new"]:hover {
+    background-color: #218838;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}

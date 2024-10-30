@@ -1,0 +1,85 @@
+/* Base style for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 60px; /* Increased padding for more space */
+    background-color: #f0f4f8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Style for the form */
+form {
+    background-color: white;
+    border-radius: 10px; /* Slightly larger radius */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* More prominent shadow */
+    padding: 40px; /* Increased padding */
+    width: 100%;
+    max-width: 450px; /* Wider form */
+}
+
+/* Style for input fields */
+input[type="text"], textarea {
+    width: 100%;
+    padding: 15px; /* Increased padding */
+    margin: 15px 0; /* Increased margin */
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Slightly larger radius */
+    font-size: 1.2em; /* Larger font size */
+    transition: border 0.3s;
+}
+
+/* Input and textarea focus style */
+input[type="text"]:focus, textarea:focus {
+    border: 1px solid #007bff; /* Highlight border on focus */
+    outline: none; /* Remove default outline */
+}
+
+/* Style for the submit button */
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 15px 20px; /* Increased padding */
+    border: none;
+    border-radius: 6px; /* Slightly larger radius */
+    font-size: 1.2em; /* Larger font size */
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Button hover effect */
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    body {
+        padding: 30px; /* Adjusted for smaller screens */
+    }
+
+    form {
+        padding: 30px; /* Increased padding */
+    }
+
+    button {
+        width: 100%; /* Full width on smaller screens */
+    }
+}
+input{
+    width: 300px;
+    height: 30px;
+}

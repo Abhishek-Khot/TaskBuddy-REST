@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Post</title>
+    <link rel="stylesheet" href="/edit.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Edit your task</h2>
+      <p>Task id :<%= post.id %></p>
+      <p>Task description: <%= post.username %></p>
+      <form method="post" action="/posts/<%= post.id %>?_method=PATCH">
+        <textarea rows="10" cols="35" name="content">
+<%= post.content %></textarea
+        >
+        <button>submit</button>
+      </form>
+    </div>
+  </body>
+</html>
